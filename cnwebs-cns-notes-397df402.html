@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资料整理 · 世界杯信息索引</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
+            background: #faf8f5;
+            color: #2e2b27;
+            line-height: 1.75;
+            padding: 2rem 1.5rem 4rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+        .hero {
+            margin-top: 1.2rem;
+            margin-bottom: 2.8rem;
+            border-left: 5px solid #c6a57a;
+            padding-left: 1.8rem;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 450;
+            letter-spacing: 0.5px;
+            color: #3a322a;
+            margin-bottom: 0.4rem;
+        }
+        .hero .sub {
+            font-size: 1rem;
+            color: #7a6f63;
+            letter-spacing: 0.3px;
+        }
+        .opening {
+            font-size: 1.08rem;
+            background: #f3eee8;
+            padding: 1.6rem 2rem;
+            border-radius: 18px;
+            margin-bottom: 2.8rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+        .opening p {
+            margin-bottom: 0.9rem;
+        }
+        .opening p:last-child {
+            margin-bottom: 0;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 450;
+            border-bottom: 1px solid #d8cfc4;
+            padding-bottom: 0.4rem;
+            margin: 2.2rem 0 1.2rem;
+            color: #3f352d;
+        }
+        .feature-list {
+            list-style: none;
+        }
+        .feature-list li {
+            background: #ffffffdd;
+            backdrop-filter: blur(2px);
+            padding: 1.2rem 1.6rem;
+            margin-bottom: 0.8rem;
+            border-radius: 14px;
+            border: 1px solid #e7dfd4;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .feature-list li::before {
+            content: "⚽";
+            font-size: 1.25rem;
+            filter: grayscale(0.3);
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+        }
+        .feature-list strong {
+            display: block;
+            font-weight: 500;
+            color: #3d332b;
+            margin-bottom: 0.1rem;
+        }
+        .feature-list .desc {
+            color: #5d5246;
+            font-size: 0.98rem;
+        }
+        .quote-block {
+            background: #efe8e0;
+            padding: 1.6rem 2rem;
+            border-radius: 24px 8px 24px 8px;
+            margin: 2.4rem 0 2rem;
+            font-size: 0.98rem;
+            border: 1px solid #dccfc1;
+        }
+        .quote-block p {
+            margin-bottom: 0.6rem;
+        }
+        .quote-block p:last-of-type {
+            margin-bottom: 0;
+        }
+        .faq-mini {
+            margin: 2.2rem 0 2.6rem;
+        }
+        .faq-item {
+            padding: 1rem 0;
+            border-bottom: 1px dashed #d6ccc0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 500;
+            color: #423830;
+            margin-bottom: 0.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .faq-q::before {
+            content: "▸";
+            color: #b2967a;
+            font-size: 1.1rem;
+        }
+        .faq-a {
+            color: #5c5146;
+            padding-left: 1.6rem;
+            font-size: 0.96rem;
+        }
+        .closing {
+            background: #f2ece4;
+            padding: 1.8rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 2.8rem;
+            border: 1px solid #dfd3c4;
+            font-size: 1.02rem;
+        }
+        .closing a {
+            color: #7f674c;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 2px solid #dccfc1;
+            transition: border-color 0.2s;
+        }
+        .closing a:hover {
+            border-bottom-color: #7f674c;
+        }
+        .footnote {
+            margin-top: 3rem;
+            font-size: 0.86rem;
+            color: #8f8378;
+            text-align: center;
+            border-top: 1px solid #e3d8cd;
+            padding-top: 1.8rem;
+        }
+        @media (max-width: 550px) {
+            body { padding: 1.2rem 1rem 3rem; }
+            .hero { padding-left: 1.2rem; }
+            .hero h1 { font-size: 1.6rem; }
+            .opening { padding: 1.2rem 1.2rem; }
+            .feature-list li { padding: 1rem 1.2rem; flex-wrap: wrap; gap: 0.4rem; }
+            .quote-block { padding: 1.2rem 1.2rem; }
+            .closing { padding: 1.2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>世界杯 · 信息索引</h1>
+    <div class="sub">一份安静的整理 · 从资料到脉络</div>
+</div>
+
+<div class="opening">
+    <p>如果你正在寻找关于世界杯的系统化信息，这里或许是一个合适的起点。这个页面不追求即时新闻的速度，而是将零散的知识点、赛制演变、经典对阵以及统计数据整理成可供查阅的片段。所有内容都围绕着同一个核心——<strong>世界杯</strong>——展开，并努力保持一种平实、可追溯的叙述方式。</p>
+    <p>从1930年首届赛事至今，世界杯已经积累了近百年的档案与故事。作为资料索引页，我们更关注那些经得起时间检验的结构化信息：冠军分布、主办国规律、参赛队伍变迁，以及那些塑造了赛事面貌的规则调整。以下内容按模块整理，方便你按需浏览。</p>
+</div>
+
+<h2 class="section-title">整理要点</h2>
+<ul class="feature-list">
+    <li>
+        <div>
+            <strong>赛制演变记录</strong>
+            <span class="desc">从13支球队到32强，再到2026年的48队赛制；小组赛、淘汰赛、加时赛与点球规则的调整均有归档说明。</span>
+        </div>
+    </li>
+    <li>
+        <div>
+            <strong>冠军地理与周期</strong>
+            <span class="desc">南美与欧洲的冠军分布比例、卫冕情况、东道主夺冠次数，以及各大洲最佳战绩等统计均以表格化思路整理。</span>
+        </div>
+    </li>
+    <li>
+        <div>
+            <strong>经典比赛与数据</strong>
+            <span class="desc">进球最多/最少的决赛、最大分差场次、单届进球纪录、出场王与射手榜——这些数字背后是清晰的索引节点。</span>
+        </div>
+    </li>
+    <li>
+        <div>
+            <strong>符号与记录档案</strong>
+            <span class="desc">吉祥物演变、官方用球列表、主题曲与开幕式风格变化、奖杯更迭细节，均按年代逐一编录。</span>
+        </div>
+    </li>
+</ul>
+
+<div class="quote-block">
+    <p>📋 在资料整理中，我们始终遵循“可溯源”的原则。每条信息都尽量标注来源赛事或官方记录，避免模糊的传闻。例如关于1966年决赛的争议进球、1974年新奖杯启用等话题，页面上会同时列出不同角度的记载，不预设结论。</p>
+    <p>如果你对某个特定年份或区域的世界杯信息感兴趣，可以顺着索引进一步查找更详细的分页。</p>
+</div>
+
+<h2 class="section-title">常见信息片段 · 快速参考</h2>
+<div class="faq-mini">
+    <div class="faq-item">
+        <div class="faq-q">主办国挑选的主要依据是什么？</div>
+        <div class="faq-a">国际足联执委会投票决定，兼顾各大洲轮换原则（从2002年开始实施更明确的轮换思路，2017年后调整为各大洲申办资格限制）。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">哪支球队拥有最多的世界杯冠军头衔？</div>
+        <div class="faq-a">巴西国家队，共获得5次冠军（1958、1962、1970、1994、2002）。德国和意大利各获得4次，并列第二。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">世界杯历史上有没有球队在小组赛全胜却未能出线？</div>
+        <div class="faq-a">在1982年及以前的赛制中（如1974年第二阶段小组赛），出现过小组全胜但积分不够晋级下一轮的情况。1986年改制后，小组赛全胜即确保出线。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">最年长和最年轻的参赛球员纪录分别属于谁？</div>
+        <div class="faq-a">最年长：埃及门将埃萨姆·埃尔-哈达里（2018年，45岁）。最年轻：北爱尔兰的诺曼·怀特塞德（1982年，17岁零41天）。</div>
+    </div>
+</div>
+
+<div class="closing">
+    <p>以上内容只是世界杯浩瀚档案的一角。如果你想进一步查看完整的赛事历史、赛程数据或各届回顾，可以随时访问 <a href="https://cnwebs-cns-shijiebei.com">世界杯</a> 专题索引页，那里有按年份、大洲和关键词分类的丰富资料。</p>
+    <p style="margin-top: 0.8rem; font-size: 0.92rem; color: #6b6055;">我们持续更新整理，但力求每条更改都有据可循。</p>
+</div>
+
+<div class="footnote">
+    资料整理 · 引用数据截至2025年 · 内容以事实性记录为主
+</div>
+
+</body>
+</html>
